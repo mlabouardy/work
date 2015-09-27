@@ -1,1 +1,2 @@
-# work
+# AtelierCP
+Gestion des ateliers
