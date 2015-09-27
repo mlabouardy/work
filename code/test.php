@@ -12,6 +12,7 @@ while( $resultat = $resultats->fetch() ){
 }
 $resultats->closeCursor();
 
+echo "ok";
 
 ?>
 
