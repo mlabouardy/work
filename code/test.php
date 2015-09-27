@@ -13,6 +13,14 @@ while( $resultat = $resultats->fetch() ){
 $resultats->closeCursor();
 
 echo "ok";
-
 ?>
+<html>
+	<head>
+	
+	</head>
+	<body>
+		okkkk;
+	</body>
+</html>
+
 
