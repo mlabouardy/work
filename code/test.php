@@ -4,14 +4,14 @@ require 'controler/config/Connect.php';
 
 $sql_update_workshop = "SELECT * FROM Atelier";
 
-$resultats=$db->query($sql_update_workshop);
-$resultats->setFetchMode(PDO::FETCH_OBJ);
+$sth=$db->prepare($sql_update_workshop);
+$sth->execute();
 
-while( $resultat = $resultats->fetch() ){
-	echo 'Utilisateur : '.$resultat->nom.'<br>';
+$res=$sth>fetchAll();
+
+foreach($res as $r){
+	echo $r->nom;
 }
-$resultats->closeCursor();
-
 echo "ok";
 ?>
 <html>
