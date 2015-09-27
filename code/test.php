@@ -7,7 +7,7 @@ $sql_update_workshop = "SELECT * FROM Atelier";
 $sth=$db->prepare($sql_update_workshop);
 $sth->execute();
 
-$res=$sth>fetchAll();
+$res=$sth>fetchAll(PDO::FETCH_ASSOC);
 
 foreach($res as $r){
 	echo $r->nom;
