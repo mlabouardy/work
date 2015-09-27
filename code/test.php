@@ -4,9 +4,7 @@ require 'controler/config/Connect.php';
 
 $sql_update_workshop = "SELECT * FROM Atelier";
 
-$sth=$db->prepare($sql_update_workshop);
-$sth->execute();
-
+$sth=$db->query($sql_update_workshop);
 $res=$sth>fetchAll(PDO::FETCH_ASSOC);
 
 foreach($res as $r){
