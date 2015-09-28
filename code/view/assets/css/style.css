@@ -142,7 +142,7 @@ body,html{
 }
 
 .workshop-option-update{
-	float:left;
+	float:right;
 	line-height:40px;
 	text-align:center;
 	width:75px;
@@ -154,7 +154,7 @@ body,html{
 	font-family:Roboto;
 }
 .workshop-option-delete{
-	float:left;
+	float:right;
 	width:82.5px;
 	line-height:40px;
 	text-align:center;
