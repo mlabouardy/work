@@ -3,7 +3,8 @@
 require 'controler/Functions.php';
 
 
-if(isset($_GET['id'])){
+$id=$_GET['id'];
+if(isset($id)){
 	deleteWorkshop($id);
 	header('Location: index.php');
   die();
