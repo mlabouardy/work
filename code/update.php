@@ -1,6 +1,9 @@
 <?php
 
+
 require 'controler/Functions.php';
+
+error_reporting(0);
 
 $workshop;
 $id=$_GET['id'];
@@ -20,7 +23,7 @@ $description=$_POST['description'];
 
 if(isset($name) && isset($subject) && isset($location) && isset($hours) && isset($laboratory) && isset($animator) && isset($description)){
 	updateWorkshop($name, $subject, $location, $hours, $laboratory, $animator, $description, $id);
-  header('Location: test.php');
+  header('Location: index.php');
 }
 
 ?>

@@ -2,6 +2,8 @@
 
 require 'controler/Functions.php';
 
+error_reporting(0);
+
 $name=$_POST['name'];
 $subject=$_POST['subject'];
 $location=$_POST['location'];
@@ -12,7 +14,7 @@ $description=$_POST['description'];
 
 if(isset($name) && isset($subject) && isset($location) && isset($hours) && isset($laboratory) && isset($animator) && isset($description)){
 	createWorkshop($name, $subject, $location, $hours, $laboratory, $animator, $description);
-  header('Location: test.php');
+  header('Location: index.php');
 }
 
 ?>
